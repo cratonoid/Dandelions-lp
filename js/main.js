@@ -106,7 +106,7 @@ jQuery(document).ready(function($) {
 	};
 	// sitePlusMinus();
 
-	const scriptURL = "https://script.google.com/macros/s/AKfycbxQ1DGPgonB92uhIip-mNNO42XtBBjLPp_aJt14DqjzAZSwnjtQUr8jI4uTg5p1VfCpwA/exec";
+	const scriptURL = "https://script.google.com/macros/s/AKfycbwGqC-ZSwFQdoNWmhGMZ8EzvIeu9O0ClvtWxX_IsnzivjVXww2kol8aiXCC93_ztEYb/exec";
 		
         $("#submitForm").click(function (event) {
             event.preventDefault();
@@ -164,7 +164,7 @@ jQuery(document).ready(function($) {
 				"Business Name":bname,
                 "Convenient Time to Connect": connectTime,
                 "Url" : url,
-                "Lp name" : "Impossible_Sales_1",
+                "Lp name" : "Dandelion_lp",
 				
             };
 
