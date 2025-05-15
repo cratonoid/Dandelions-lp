@@ -184,9 +184,9 @@ jQuery(document).ready(function($) {
 			});
 			
 			// Redirect without waiting for the server
-			setTimeout(() => {
-				window.location.href = "thankyou.html";
-			}, 500); // Redirect after 0.5 second
+			// setTimeout(() => {
+			// 	window.location.href = "thankyou.html";
+			// }, 500); // Redirect after 0.5 second
 			
         });
 
