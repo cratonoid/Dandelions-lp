@@ -818,9 +818,7 @@ h1, h2, h3, h4, h5,
 
 .site-section {
   padding: 2rem 0; }
-  @media (max-width: 991.98px) {
-    .site-section {
-      padding: 3rem 0; } }
+  
 
 .gradient-bg-1, .block-feature-1 .icon {
   background: #51eaea;
