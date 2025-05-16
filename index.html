@@ -558,7 +558,7 @@
     </div>
 
     <!-- Apply Now Button -->
-    <div class="text-center" style="transform: translate(0%, 100%);">
+    <div class="text-center button-join">
       <button class="connet connect-button btn-gradient" data-bs-toggle="modal" data-bs-target="#detailsModal" >
         Apply Now
       </button>
@@ -576,6 +576,9 @@
 
 
 <style>
+  .button-join{
+    transform: translate(0%, 100%);
+  }
   .mobile-eligibility{
     display: none;
   }
@@ -649,9 +652,25 @@
   padding-top: 6%;
 }
 
+@media (max-width: 360px){
+  .connect-button{
+    font-size: 1.5rem !important;
+  }
+}
+@media (max-width: 466px) {
+  .button-join{
+    transform: translate(0%, -5%) !important;
+  }
+}
 @media (max-width: 768px) {
   .certificate-card-mobile{
     text-align: left;
+  }
+  .button-join{
+    transform: translate(0%, 10%);
+  }
+  .challengess{
+    height: 98rem;
   }
   .card-heading-wrapper-1{
     background: #f4f4f4;
@@ -685,7 +704,8 @@ h2.d-flex.align-items-center {
     display: none;
    }
 
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
+   
    .recruiters-desktop{
     display: none;
    }
@@ -1543,7 +1563,7 @@ is a win-win for all.</p>
       width: 3.5rem; /* smaller size for small screens */
     }
   }
-@media (max-width: 411px) {
+@media (max-width: 414px) {
     .social-icon img {
       width: 3rem; /* smaller size for small screens */
       margin: 0 0.8rem;
