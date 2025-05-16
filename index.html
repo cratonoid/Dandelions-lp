@@ -467,10 +467,10 @@
 
     <div class="row text-center  mobile-certificate">
       <!-- Repeat this block 8 times for each card -->
-      <div class="col-md-3 mb-4">
-        <div class="card-heading-wrapper certificate-card">
+      <div class="cert-drop col-md-3">
+        <div class="card-heading-wrapper card-heading-wrapper-1 certificate-card">
         <h5 class="card-heading">Cloud Certificate</h5>
-        <span class="arrow-icon-certificate-mobile">&#9660;</span>
+        <span class="arrow-icon-certificate-mobile" style="align-items: flex-end;">&#9660;</span>
         </div>
         <div class="eligibility-card p-3 certificate-card-mobile">
           <h5 class="subheading-gradient">Primary language proficiency:</h5>
@@ -480,8 +480,8 @@
         </div>
       </div>
 
-      <div class="col-md-3 mb-4">
-        <div class="card-heading-wrapper certificate-card">
+      <div class="cert-drop col-md-3">
+        <div class="card-heading-wrapper card-heading-wrapper-1 certificate-card">
         <h5 class="card-heading">DevOps & Infrastructure</h5>
         <span class="arrow-icon-certificate-mobile">&#9660;</span>
         </div>
@@ -495,8 +495,8 @@
         </div>
       </div>
 
-      <div class="col-md-3 mb-4">
-        <div class="card-heading-wrapper certificate-card">
+      <div class="cert-drop col-md-3">
+        <div class="card-heading-wrapper card-heading-wrapper-1 certificate-card">
         <h5 class="card-heading">Programming & PlatForm-Specific</h5>
         <span class="arrow-icon-certificate-mobile">&#9660;</span>
         </div>
@@ -508,8 +508,8 @@
         </div>
       </div>
 
-      <div class="col-md-3 mb-4">
-        <div class="card-heading-wrapper certificate-card">
+      <div class="cert-drop col-md-3">
+        <div class="card-heading-wrapper card-heading-wrapper-1 certificate-card">
         <h5 class="card-heading">Testing & QAAgile & Project Management</h5>
         <span class="arrow-icon-certificate-mobile">&#9660;</span>
         </div>
@@ -521,8 +521,8 @@
         </div>
       </div>
 
-      <div class="col-md-3 mb-4">
-        <div class="card-heading-wrapper certificate-card">
+      <div class="cert-drop col-md-3">
+        <div class="card-heading-wrapper card-heading-wrapper-1 certificate-card">
           <h5 class="card-heading">Agile & Project Management</h5>
           <span class="arrow-icon-certificate-mobile">&#9660;</span>
         </div>
@@ -534,8 +534,8 @@
         </div>
       </div>
 
-      <div class="col-md-3 mb-4">
-        <div class="card-heading-wrapper certificate-card">
+      <div class="cert-drop col-md-3">
+        <div class="card-heading-wrapper card-heading-wrapper-1 certificate-card">
         <h5 class="card-heading">Security & Networking</h5>
         <span class="arrow-icon-certificate-mobile">&#9660;</span>
         </div>
@@ -647,6 +647,12 @@
 }
 
 @media (max-width: 768px) {
+  .card-heading-wrapper-1{
+    background: #f4f4f4;
+     justify-content: unset !important;
+     padding-left: 1.5rem;
+  }
+  
   .card-heading-wrapper{
     justify-content: unset !important;
   }
