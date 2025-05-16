@@ -1269,7 +1269,7 @@ is a win-win for all.</p>
 
 
     <!-- Images Row -->
-    <div class="row flex-nowrap overflow-auto mobile-slider image-slider" id="imageSlider">
+    <div class="row flex-nowrap overflow-auto mobile-slider image-slider" id="whoSlider" onscroll="updateWhoDots()">
       <div class="col-10 col-md-4 me-3">
         <img src="images/im2.png" alt="Image 1" class="who-img">
       </div>
@@ -1280,6 +1280,12 @@ is a win-win for all.</p>
         <img src="images/im1.png" alt="Image 3" class="who-img">
       </div>
     </div>
+    <div class="slider-dots text-center mt-3 mb-3" id="whoSliderDots">
+  <span class="dot active" onclick="scrollImageToSlide(0)"></span>
+  <span class="dot" onclick="scrollImageToSlide(1)"></span>
+  <span class="dot" onclick="scrollImageToSlide(2)"></span>
+</div>
+
 
 
     <div class="col-12 text-center mb-5">      
@@ -2152,6 +2158,35 @@ function updateNewsDots() {
 }
 
 newsSlider.addEventListener('scroll', updateNewsDots);
+</script>
+
+
+<script>
+  const whoSlider = document.getElementById('whoSlider');
+const WhoDots = document.getElementById('whoSliderDots').children;
+
+function scrollWhoToSlide(index) {
+  const slideWidth = whoSlider.children[0].offsetWidth + 16; // width + gap (adjust gap if needed)
+  whoSlider.scrollTo({
+    left: index * slideWidth,
+    behavior: 'smooth'
+  });
+  setActiveWhoDot(index);
+}
+
+function setActiveWhoDot(index) {
+  for (let dot of WhoDots) dot.classList.remove('active');
+  if (WhoDots[index]) WhoDots[index].classList.add('active');
+}
+
+function updateWhoDots() {
+  const scrollLeft = whoSlider.scrollLeft;
+  const slideWidth = whoSlider.children[0].offsetWidth + 16; // width + gap
+  const index = Math.round(scrollLeft / slideWidth);
+  setActiveWhoDot(index);
+}
+
+whoSlider.addEventListener('scroll', updateWhoDots);
 </script>
 
     
