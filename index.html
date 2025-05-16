@@ -308,46 +308,27 @@
     </div>
 
     <!-- CERTIFICATIONS Section -->
-    <!-- CERTIFICATIONS Section -->
-<div class="col-12 text-center mt-5 certification-section">
-  <div class="block-heading-1">
-    <h2 class="main-heading" style="color: #000000; font-weight: 900;">CERTIFICATIONS</h2>
-  </div>
-  <div>
-    <h4 style="color: #000000; font-weight: 600;">Advantageous but not mandatory</h4>
-  </div>
+    <div class="col-12 text-center mt-5">
+      <div class="block-heading-1">
+        <h2 class= main-heading style="color: #000000; font-weight: 900;">CERTIFICATIONS</h2>
+      </div>
+      <div>
+        <h4 style="color: #000000; font-weight: 600;">Advantageous but not mandatory</h4>
+      </div>
+      <img src="images/cert.png" alt="Certifications" class="img-fluid my-4" style="max-width: 100%;">
+    </div>
 
-  <!-- Certification Accordion Items -->
-  <div class="certification-item">Cloud Certifications</div>
-  <div class="certification-content">
-    <!-- Add detailed info here if needed -->
-  </div>
-
-  <div class="certification-item">DevOps & Infrastructure</div>
-  <div class="certification-content"></div>
-
-  <div class="certification-item">Programming & Platform-Specific</div>
-  <div class="certification-content"></div>
-
-  <div class="certification-item">Testing & QA Agile & Project Management</div>
-  <div class="certification-content"></div>
-
-  <div class="certification-item">Agile & Project Management</div>
-  <div class="certification-content"></div>
-
-  <div class="certification-item">Security & Networking</div>
-  <div class="certification-content"></div>
-
-</div>
-
-<!-- Apply Now Button -->
-<div class="text-center" style="transform: translate(0%, 100%);">
-  <button class="connect-button btn-gradient" data-bs-toggle="modal" data-bs-target="#detailsModal">
-    Join Recruiter Community
-  </button>
-  <p>Connect with network of recruiters looking for above skills</p>
-</div>
-
+    <!-- Apply Now Button -->
+    <div class="text-center" style="transform: translate(0%, 100%);">
+      <button class="connect-button btn-gradient" data-bs-toggle="modal" data-bs-target="#detailsModal" >
+        Join Recruiter Community
+      </button>
+      <p>
+        Connect with network of recruiters looking for above skills
+      </p>
+     
+    </div>
+    
     
 
   </div>
@@ -415,61 +396,6 @@
 
 .mb-4 {
   padding-top: 6%;
-}
-
-.certification-section {
-  background-color: #a7d4ff; /* light blue */
-  padding: 20px 15px 40px;
-  border-radius: 10px;
-  max-width: 450px;
-  margin: 0 auto 30px;
-  text-align: left;
-}
-
-.certification-section .block-heading-1,
-.certification-section > div:first-child {
-  text-align: center;
-}
-
-.certification-item {
-  background: white;
-  border-radius: 12px;
-  padding: 12px 20px;
-  font-weight: 600;
-  color: black;
-  margin: 12px 0;
-  cursor: pointer;
-  position: relative;
-  user-select: none;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
-}
-
-.certification-item::after {
-  content: "▼";
-  position: absolute;
-  right: 15px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 0.8rem;
-  transition: transform 0.3s ease;
-}
-
-.certification-item.active::after {
-  transform: translateY(-50%) rotate(180deg);
-}
-
-.certification-content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease;
-  padding-left: 15px;
-  font-weight: normal;
-  color: #333;
-}
-
-.certification-content.open {
-  max-height: 400px; /* enough space for content */
-  padding-top: 10px;
 }
 
 @media (max-width: 768px) {
