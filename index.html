@@ -330,7 +330,7 @@
      <div class="row text-center  mobile-eligibility">
       <!-- Repeat this block 8 times for each card -->
       <div class="col-md-3">
-        <div class="card-heading-wrapper">
+        <div class="card-heading-wrapper eligibility-mobile-card">
           <img src="images/sec1.jpeg" alt="icon" class="card-icon" />
         <h5 class="card-heading">Programming Languages</h5>
         <span class="arrow-icon-mobile">&#9660;</span>
@@ -344,7 +344,7 @@
       </div>
 
       <div class="col-md-3">
-        <div class="card-heading-wrapper">
+        <div class="card-heading-wrapper eligibility-mobile-card">
           <img src="images/sec3.jpeg" alt="icon" class="card-icon" />
         <h5 class="card-heading">Frontend Development</h5>
         <span class="arrow-icon-mobile">&#9660;</span>
@@ -360,7 +360,7 @@
       </div>
 
       <div class="col-md-3">
-        <div class="card-heading-wrapper">
+        <div class="card-heading-wrapper eligibility-mobile-card">
           <img src="images/sec2.jpeg" alt="icon" class="card-icon" />
         <h5 class="card-heading">Backend Development</h5>
         <span class="arrow-icon-mobile">&#9660;</span>
@@ -374,7 +374,7 @@
       </div>
 
       <div class="col-md-3">
-        <div class="card-heading-wrapper">
+        <div class="card-heading-wrapper eligibility-mobile-card">
           <img src="images/sec4.jpeg" alt="icon" class="card-icon" />
         <h5 class="card-heading">Databases</h5>
         <span class="arrow-icon-mobile">&#9660;</span>
@@ -388,7 +388,7 @@
       </div>
 
       <div class="col-md-3">
-        <div class="card-heading-wrapper">
+        <div class="card-heading-wrapper eligibility-mobile-card">
           <img src="images/sec6.jpeg" alt="icon" class="card-icon" />
         <h5 class="card-heading">Cloud Platforms</h5>
         <span class="arrow-icon-mobile">&#9660;</span>
@@ -402,7 +402,7 @@
       </div>
 
       <div class="col-md-3">
-        <div class="card-heading-wrapper">
+        <div class="card-heading-wrapper eligibility-mobile-card">
           <img src="images/sec5.jpeg" alt="icon" class="card-icon" />
         <h5 class="card-heading">DevOps and CI/CD</h5>
         <span class="arrow-icon-mobile">&#9660;</span>
@@ -421,7 +421,7 @@
       </div>
 
       <div class="col-md-3">
-        <div class="card-heading-wrapper">
+        <div class="card-heading-wrapper eligibility-mobile-card">
           <img src="images/sec8.jpeg" alt="icon" class="card-icon" />
         <h5 class="card-heading">Testing & Quality Assurance</h5>
         <span class="arrow-icon-mobile">&#9660;</span>
@@ -439,7 +439,7 @@
       </div>
 
       <div class="col-md-3">
-        <div class="card-heading-wrapper">
+        <div class="card-heading-wrapper eligibility-mobile-card">
           <img src="images/sec7.jpeg" alt="icon" class="card-icon" />
         <h5 class="card-heading">APIs & Integration</h5>
         <span class="arrow-icon-mobile">&#9660;</span>
@@ -1359,7 +1359,7 @@ is a win-win for all.</p>
       </div>
     </div>
 
-    <div class="slider-dots text-center mt-3" id="newsSliderDots">
+    <div class="slider-dots text-center mt-3 mb-3" id="newsSliderDots">
       <span class="dot active" onclick="scrollNewsToSlide(0)"></span>
       <span class="dot" onclick="scrollNewsToSlide(1)"></span>
       <span class="dot" onclick="scrollNewsToSlide(2)"></span>
@@ -2043,12 +2043,13 @@ The operator and other persons who have access to personal data are obliged not 
 </script>
 <script>
   $(document).ready(function () {
-    $('.arrow-icon-mobile').click(function () {
-      const $icon = $(this);
-      const $card = $icon.closest('.col-md-3').find('.eligibility-card-mobile');
+    $('.eligibility-mobile-card').click(function () {
+      const $card = $(this).closest('.col-md-3');                        // Find the parent card
+      const $content = $card.find('.eligibility-card-mobile');          // Target card content
+      const $arrow = $(this).find('.arrow-icon-mobile');    // Target arrow
 
-      $card.slideToggle();                     // Show/hide the card
-      $icon.toggleClass('rotated`');            // Rotate arrow
+      $content.slideToggle();             // Toggle content visibility
+      $arrow.toggleClass('rotated');
     });
     $('.certificate-card').click(function () {
       const $card = $(this).closest('.col-md-3');                        // Find the parent card
