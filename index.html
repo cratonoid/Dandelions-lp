@@ -376,7 +376,7 @@
       <div class="col-md-3">
         <div class="card-heading-wrapper eligibility-mobile-card">
           <img src="images/sec4.jpeg" alt="icon" class="card-icon" />
-        <h5 class="card-heading">Databases</h5>
+        <h5 class="card-heading">Database</h5>
         <span class="arrow-icon-mobile">&#9660;</span>
         </div>
         <div class="eligibility-card p-3 eligibility-card-mobile">
@@ -469,14 +469,17 @@
       <!-- Repeat this block 8 times for each card -->
       <div class="cert-drop col-md-3">
         <div class="card-heading-wrapper card-heading-wrapper-1 certificate-card">
-        <h5 class="card-heading">Cloud Certificate</h5>
+        <h5 class="card-heading">Cloud Certifications</h5>
         <span class="arrow-icon-certificate-mobile" style="align-items: flex-end;">&#9660;</span>
         </div>
         <div class="eligibility-card p-3 certificate-card-mobile">
-          <h5 class="subheading-gradient">Primary language proficiency:</h5>
-          <p>Java, Spring Boot, Python (Django/Flask), JavaScript – full-stack (Node.js + React/Vue)</p>
-          <h5 class="subheading-gradient"> Secondary or supporting languages:</h5>
-          <p>C# – .NET, PHP, Kotlin, TypeScript (Angular, React)</p>
+          <ul >
+    <li>AWS Certified Solutions Architect – Associate</li>
+    <li>Microsoft Certified: Azure Fundamentals / Associate</li>
+    <li>Google Associate Cloud Engineer</li>
+    <li>AWS Certified Developer – Associate</li>
+  </ul>
+          
         </div>
       </div>
 
@@ -486,12 +489,12 @@
         <span class="arrow-icon-certificate-mobile">&#9660;</span>
         </div>
         <div class="eligibility-card p-3 certificate-card-mobile">
-          <h5 class="subheading-gradient">Web technologies:</h5>
-          <p> HTML5, CSS3, JavaScript (ES6+)</p>
-          <h5 class="subheading-gradient">Frontend frameworks/libraries</h5>
-          <p>React.js, Angular, Vue.js</p>
-          <h5 class="subheading-gradient">State management tools:</h5>
-          <p>Redux (React), NgRx (Angular)</p>
+          <ul >
+    <li>Docker Certified Associate</li>
+    <li>Certified Kubernetes Administrator (CKA)</li>
+    <li>HashiCorp Certified Terraform Associate</li>
+    <li>Microsoft Certified: Devops Engineer Expert</li>
+  </ul>
         </div>
       </div>
 
@@ -501,10 +504,11 @@
         <span class="arrow-icon-certificate-mobile">&#9660;</span>
         </div>
         <div class="eligibility-card p-3 certificate-card-mobile">
-          <h5 class="subheading-gradient">Frameworks and ecosystems:</h5>
-          <p> Spring Boot (Java) – REST APIs, Node.js + Express, Django / Flask (Python), ASP.NET Core (C#), Laravel (PHP)</p>
-          <h5 class="subheading-gradient">Common practices:</h5>
-          <p> MVC architecture, RESTful services, Authentication (JWT, OAuth2), Middleware and routing</p>
+          <ul >
+    <li>Oracle Certified Professional: Java SE Programmer</li>
+    <li>Microsoft Certified: C# Developer / .NET Associate</li>    
+    <li>Python Institute's PCEP/PCAP</li>
+  </ul>
         </div>
       </div>
 
@@ -514,10 +518,11 @@
         <span class="arrow-icon-certificate-mobile">&#9660;</span>
         </div>
         <div class="eligibility-card p-3 certificate-card-mobile">
-          <h5 class="subheading-gradient">Relational databases (RDBMS):</h5>
-          <p>MySQL, PostgreSQL, SQL Server / Oracle DB</p>
-          <h5 class="subheading-gradient">NoSQL databases:</h5>
-          <p>MongoDB, Redis, Elasticsearch</p>
+          <ul >
+    <li>ISQTB Foundation Level Certified Scrum Master (CSM)</li>
+    <li>Certified Selenium Professional</li>
+   
+  </ul>
         </div>
       </div>
 
@@ -527,10 +532,11 @@
           <span class="arrow-icon-certificate-mobile">&#9660;</span>
         </div>
         <div class="eligibility-card p-3 certificate-card-mobile">
-          <h5 class="subheading-gradient"> Working knowledge of major providers:</h5>
-          <p>AWS (EC2, S3, RDS, Lambda, CloudWatch, IAM), Azure (App Services, Functions, Blob Storage, DevOps pipelines), GCP (Compute Engine, Cloud Functions, Firestore)</p>
-          <h5 class="subheading-gradient">Common use cases:</h5>
-          <p>Hosting web apps, APIs, databases, CI/CD deployment, Cloud-based logging and monitoring</p>
+          <ul >
+    <li>Certified Scrum Master (CSM)</li>
+    <li>PMI Agile Certified Practitioner (PMI-ACP)</li>
+    
+  </ul>
         </div>
       </div>
 
@@ -540,14 +546,11 @@
         <span class="arrow-icon-certificate-mobile">&#9660;</span>
         </div>
         <div class="eligibility-card p-3 certificate-card-mobile">
-          <h5 class="subheading-gradient">Version control & collaboration:</h5>
-          <p>Git, GitHub, GitLab, Bitbucket</p>
-          <h5 class="subheading-gradient">CI/CD tools:</h5>
-          <p>Jenkins, GitHub Actions / GitLab CI, Azure DevOps</p>
-          <h5 class="subheading-gradient">Containers & orchestration:</h5>
-          <p>Docker, Kubernetes</p>
-          <h5 class="subheading-gradient">Infrastructure as Code (IaC):</h5>
-          <p>Terraform or AWS CloudFormation (basic)</p>
+          <ul >
+    <li>CompTIA Security+</li>
+    <li>Cisco Certified Network Associate (CCNA)</li>
+    
+  </ul>
 
         </div>
       </div>
@@ -557,7 +560,7 @@
     <!-- Apply Now Button -->
     <div class="text-center button-join">
       <button class="connet connect-button btn-gradient" data-bs-toggle="modal" data-bs-target="#detailsModal" >
-        Join Recruiter Community
+        Apply Now
       </button>
       <p>
         Connect with network of recruiters looking for above skills
@@ -660,6 +663,9 @@
   }
 }
 @media (max-width: 768px) {
+  .certificate-card-mobile{
+    text-align: left;
+  }
   .button-join{
     transform: translate(0%, 10%);
   }
@@ -1246,7 +1252,7 @@ is a win-win for all.</p>
 <div class="who-we-are-section py-5">
   <div class="container connt">
     <!-- Heading and Paragraphs -->
-    <div class="col-12 text-center mb-5">
+    <div class="col-12 whooo mb-5">
       <div class="block-heading-1">
         <h2 class= main-heading style="color: #000000; font-weight: 900; font-size: 4rem;">WHO WE ARE</h2>
       </div>
@@ -1310,6 +1316,9 @@ is a win-win for all.</p>
 
 <!-- Styles -->
 <style>
+  .whooo{
+    text-align: center !important;
+  }
 .who-we-are-section {
   background-color: #e6f2ff; /* Light blue background */
 }
@@ -1438,6 +1447,9 @@ is a win-win for all.</p>
 
 
 @media (max-width: 768px) {
+  .who-img{
+    height: 11rem !important;
+  }
   .connt{
     padding-left: 10%;
     padding-right: 10%
