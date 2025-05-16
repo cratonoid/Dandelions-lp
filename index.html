@@ -932,7 +932,7 @@ h2.d-flex.align-items-center {
 <div class="site-section py-5" style="margin-top: 4rem; background-image: url('images/sec_backg.png'); background-size: cover; background-position: center;" id="wedo-section">
   <div class="container">
 
-    <div class="text-center" style= "transform: translate(0%, -95%); position: relative;"
+    <div class="connt2 text-center" style= "position: relative;"
     >
     <button class="connect-button" data-bs-toggle="modal" data-bs-target="#detailsModal"  >
       Showcase Hidden Skills
@@ -1058,7 +1058,7 @@ is a win-win for all.</p>
         </div>
       </div>
     </div>
-    <div class="text-center" style="transform: translate(0%, 120%);  position: relative;">
+    <div class="connt3 text-center" style=" position: relative;">
     <button class="connect-button" data-bs-toggle="modal" data-bs-target="#detailsModal"  >
       Get Multiple Offers
     </button>
@@ -1194,8 +1194,11 @@ is a win-win for all.</p>
   object-fit: contain;
   width: 100%;
 }
-
+.connt3{transform: translate(0%, 120%); }
 @media (max-width: 768px) {
+  .connt3{
+    transform: translate(0%, 80%) !important; 
+  }
   .connet{
     margin-top: 5%;
   }
@@ -1433,7 +1436,7 @@ is a win-win for all.</p>
     <div class="text-center">
       
       <!-- Apply Now Button -->
-      <button class="connect-button" data-bs-toggle="modal" data-bs-target="#detailsModal" style="transform: translate(0%, -50%); POSITION: relative;">
+      <button class="contlast connect-button" data-bs-toggle="modal" data-bs-target="#detailsModal" style=" POSITION: relative;">
         Apply Now
       </button>
 
@@ -1538,9 +1541,21 @@ is a win-win for all.</p>
   max-width: 50%;
 
 }
+.contlast{
+  top:10%
 
+}
+ .connt2{
+    transform: translate(0%, -95%);
+  }
 /* Media Query for Mobile View */
 @media (max-width: 768px) {
+  .connt2{
+    transform: translate(0%, -35%) !important;
+  }
+  .contlast{
+        transform: translate(0%, -50%) !important;
+  }
     .overlayy {
         justify-content: center;
         padding: 15px; /* Padding to make sure content does not touch the edges */
