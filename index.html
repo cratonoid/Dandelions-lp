@@ -461,7 +461,96 @@
       <div>
         <h4 style="color: #000000; font-weight: 600;">Advantageous but not mandatory</h4>
       </div>
-      <img src="images/cert.png" alt="Certifications" class="img-fluid my-4" style="max-width: 100%;">
+      <img src="images/cert.png" alt="Certifications" class="img-fluid my-4 certificate-laptop" style="max-width: 100%;">
+    </div>
+
+    <div class="row text-center  mobile-certificate">
+      <!-- Repeat this block 8 times for each card -->
+      <div class="col-md-3 mb-4">
+        <div class="card-heading-wrapper certificate-card">
+        <h5 class="card-heading">Cloud Certificate</h5>
+        <span class="arrow-icon-certificate-mobile">&#9660;</span>
+        </div>
+        <div class="eligibility-card p-3 certificate-card-mobile">
+          <h5 class="subheading-gradient">Primary language proficiency:</h5>
+          <p>Java, Spring Boot, Python (Django/Flask), JavaScript – full-stack (Node.js + React/Vue)</p>
+          <h5 class="subheading-gradient"> Secondary or supporting languages:</h5>
+          <p>C# – .NET, PHP, Kotlin, TypeScript (Angular, React)</p>
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-4">
+        <div class="card-heading-wrapper certificate-card">
+        <h5 class="card-heading">DevOps & Infrastructure</h5>
+        <span class="arrow-icon-certificate-mobile">&#9660;</span>
+        </div>
+        <div class="eligibility-card p-3 certificate-card-mobile">
+          <h5 class="subheading-gradient">Web technologies:</h5>
+          <p> HTML5, CSS3, JavaScript (ES6+)</p>
+          <h5 class="subheading-gradient">Frontend frameworks/libraries</h5>
+          <p>React.js, Angular, Vue.js</p>
+          <h5 class="subheading-gradient">State management tools:</h5>
+          <p>Redux (React), NgRx (Angular)</p>
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-4">
+        <div class="card-heading-wrapper certificate-card">
+        <h5 class="card-heading">Programming & PlatForm-Specific</h5>
+        <span class="arrow-icon-certificate-mobile">&#9660;</span>
+        </div>
+        <div class="eligibility-card p-3 certificate-card-mobile">
+          <h5 class="subheading-gradient">Frameworks and ecosystems:</h5>
+          <p> Spring Boot (Java) – REST APIs, Node.js + Express, Django / Flask (Python), ASP.NET Core (C#), Laravel (PHP)</p>
+          <h5 class="subheading-gradient">Common practices:</h5>
+          <p> MVC architecture, RESTful services, Authentication (JWT, OAuth2), Middleware and routing</p>
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-4">
+        <div class="card-heading-wrapper certificate-card">
+        <h5 class="card-heading">Testing & QAAgile & Project Management</h5>
+        <span class="arrow-icon-certificate-mobile">&#9660;</span>
+        </div>
+        <div class="eligibility-card p-3 certificate-card-mobile">
+          <h5 class="subheading-gradient">Relational databases (RDBMS):</h5>
+          <p>MySQL, PostgreSQL, SQL Server / Oracle DB</p>
+          <h5 class="subheading-gradient">NoSQL databases:</h5>
+          <p>MongoDB, Redis, Elasticsearch</p>
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-4">
+        <div class="card-heading-wrapper certificate-card">
+          <h5 class="card-heading">Agile & Project Management</h5>
+          <span class="arrow-icon-certificate-mobile">&#9660;</span>
+        </div>
+        <div class="eligibility-card p-3 certificate-card-mobile">
+          <h5 class="subheading-gradient"> Working knowledge of major providers:</h5>
+          <p>AWS (EC2, S3, RDS, Lambda, CloudWatch, IAM), Azure (App Services, Functions, Blob Storage, DevOps pipelines), GCP (Compute Engine, Cloud Functions, Firestore)</p>
+          <h5 class="subheading-gradient">Common use cases:</h5>
+          <p>Hosting web apps, APIs, databases, CI/CD deployment, Cloud-based logging and monitoring</p>
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-4">
+        <div class="card-heading-wrapper certificate-card">
+        <h5 class="card-heading">Security & Networking</h5>
+        <span class="arrow-icon-certificate-mobile">&#9660;</span>
+        </div>
+        <div class="eligibility-card p-3 certificate-card-mobile">
+          <h5 class="subheading-gradient">Version control & collaboration:</h5>
+          <p>Git, GitHub, GitLab, Bitbucket</p>
+          <h5 class="subheading-gradient">CI/CD tools:</h5>
+          <p>Jenkins, GitHub Actions / GitLab CI, Azure DevOps</p>
+          <h5 class="subheading-gradient">Containers & orchestration:</h5>
+          <p>Docker, Kubernetes</p>
+          <h5 class="subheading-gradient">Infrastructure as Code (IaC):</h5>
+          <p>Terraform or AWS CloudFormation (basic)</p>
+
+        </div>
+      </div>
+
     </div>
 
     <!-- Apply Now Button -->
@@ -484,6 +573,15 @@
 
 <style>
   .mobile-eligibility{
+    display: none;
+  }
+  .mobile-certificate{
+    display: none;
+  }
+  .eligibility-card-mobile{
+    display: none;
+  }
+  .certificate-card-mobile{
     display: none;
   }
   p{
@@ -595,7 +693,13 @@ h2.d-flex.align-items-center {
   .laptop-eligibility{
     display: none;
   }
+  img.certificate-laptop {
+  display: none !important;
+}
   .mobile-eligibility{
+    display: block;
+  }
+  .mobile-certificate{
     display: block;
   }
 }
@@ -1859,6 +1963,14 @@ The operator and other persons who have access to personal data are obliged not 
 
       $card.slideToggle();                     // Show/hide the card
       $icon.toggleClass('rotated');            // Rotate arrow
+    });
+    $('.certificate-card').click(function () {
+      const $card = $(this).closest('.col-md-3');                        // Find the parent card
+      const $content = $card.find('.certificate-card-mobile');          // Target card content
+      const $arrow = $(this).find('.arrow-icon-certificate-mobile');    // Target arrow
+
+      $content.slideToggle();             // Toggle content visibility
+      $arrow.toggleClass('rotated');      // Rotate the arrow
     });
   });
 </script>
