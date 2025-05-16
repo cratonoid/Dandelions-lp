@@ -106,89 +106,149 @@ jQuery(document).ready(function($) {
 	};
 	// sitePlusMinus();
 
-	const scriptURL = "https://script.google.com/macros/s/AKfycbwGqC-ZSwFQdoNWmhGMZ8EzvIeu9O0ClvtWxX_IsnzivjVXww2kol8aiXCC93_ztEYb/exec";
+	// const scriptURL = "https://script.google.com/macros/s/AKfycbwGqC-ZSwFQdoNWmhGMZ8EzvIeu9O0ClvtWxX_IsnzivjVXww2kol8aiXCC93_ztEYb/exec";
 		
-        $("#submitForm").click(function (event) {
-            event.preventDefault();
+    //     $("#submitForm").click(function (event) {
+    //         event.preventDefault();
 
-            // Get input values
-            let fullName = $("#fullName").val().trim();
-            let email = $("#email").val().trim();
-            let bname = $("#bname").val().trim();
-            let connectTime = $("#connectTime").val();
-            let url = sessionStorage.getItem("url");
+    //         let fullName = $("#fullName").val().trim();
+    //         let email = $("#email").val().trim();
+    //         let bname = $("#bname").val().trim();
+    //         let connectTime = $("#connectTime").val();
+    //         let url = sessionStorage.getItem("url");
 
-			let input = document.querySelector("#whatsappNumber");
-    		let whatsappNumber = iti ? iti.getNumber() : input.value.trim();
+	// 		let input = document.querySelector("#whatsappNumber");
+    // 		let whatsappNumber = iti ? iti.getNumber() : input.value.trim();
 
-			console.log(whatsappNumber,input,iti)
+	// 		console.log(whatsappNumber,input,iti)
            
 
-            // Validation Regex
-            let nameRegex = /^[a-zA-Z\s]+$/; 
-            let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/; 
-			let phoneRegex = /^\+\d{1,3}\s?\d{6,14}$/;
+    //         let nameRegex = /^[a-zA-Z\s]+$/; 
+    //         let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/; 
+	// 		let phoneRegex = /^\+\d{1,3}\s?\d{6,14}$/;
 
 
-            // Validation Checks
-            if (fullName === "" || !nameRegex.test(fullName)) {
-                swal("Invalid Name", "Please enter a valid full name (letters only).", "error");
-                return;
-            }
-            if (whatsappNumber === "") {
-				console.log(whatsappNumber)
-				swal("Invalid Number", "Please enter a valid international phone number.", "error");
-				return;
-			}
+    //         if (fullName === "" || !nameRegex.test(fullName)) {
+    //             swal("Invalid Name", "Please enter a valid full name (letters only).", "error");
+    //             return;
+    //         }
+    //         if (whatsappNumber === "") {
+	// 			console.log(whatsappNumber)
+	// 			swal("Invalid Number", "Please enter a valid international phone number.", "error");
+	// 			return;
+	// 		}
 			
-            if (email === "" || !emailRegex.test(email)) {
-                swal("Invalid Email", "Please enter a valid email address.", "error");
-                return;
-            }  
-			if (bname === "" ) {
-				swal("Invalid Business Name","Please enter your business name", "error");
-                return;
-			}          
-            if (connectTime === "") {
-                swal("Invalid Time", "Please select a convenient time to connect.", "error");
-                return;
-            }
+    //         if (email === "" || !emailRegex.test(email)) {
+    //             swal("Invalid Email", "Please enter a valid email address.", "error");
+    //             return;
+    //         }  
+	// 		if (bname === "" ) {
+	// 			swal("Invalid Business Name","Please enter your business name", "error");
+    //             return;
+	// 		}          
+    //         if (connectTime === "") {
+    //             swal("Invalid Time", "Please select a convenient time to connect.", "error");
+    //             return;
+    //         }
 
-            // Hide Modal on successful validation
-            $("#detailsModal").modal("hide");
+    //         $("#detailsModal").modal("hide");
 
-            let formData = {
-                "Full Name": fullName,
-                "WhatsApp Number": whatsappNumber,
-                "Email ID": email,
-				"Business Name":bname,
-                "Convenient Time to Connect": connectTime,
-                "Url" : url,
-                "Lp name" : "Dandelion_lp",
+    //         let formData = {
+    //             "Full Name": fullName,
+    //             "WhatsApp Number": whatsappNumber,
+    //             "Email ID": email,
+	// 			"Business Name":bname,
+    //             "Convenient Time to Connect": connectTime,
+    //             "Url" : url,
+    //             "Lp name" : "Dandelion_lp",
 				
-            };
+    //         };
 
-			console.log(formData)
+	// 		console.log(formData)
 
-            $.ajax({
-				url: scriptURL,
-				type: "POST",
-				data: formData,
-				contentType: "application/x-www-form-urlencoded",
-				success: function (response) {
-					console.log("Form submitted successfully", response);
-				},
-				error: function (xhr, status, error) {
-					console.error("AJAX Error:", error);
-				}
-			});
+    //         $.ajax({
+	// 			url: scriptURL,
+	// 			type: "POST",
+	// 			data: formData,
+	// 			contentType: "application/x-www-form-urlencoded",
+	// 			success: function (response) {
+	// 				console.log("Form submitted successfully", response);
+	// 			},
+	// 			error: function (xhr, status, error) {
+	// 				console.error("AJAX Error:", error);
+	// 			}
+	// 		});
 			
-			// Redirect without waiting for the server
-			// setTimeout(() => {
-			// 	window.location.href = "thankyou.html";
-			// }, 500); // Redirect after 0.5 second
 			
+			
+    //     });
+
+	const scriptURL = "https://script.google.com/macros/s/AKfycbwGqC-ZSwFQdoNWmhGMZ8EzvIeu9O0ClvtWxX_IsnzivjVXww2kol8aiXCC93_ztEYb/exec";
+
+$("#submitForm").click(function (event) {
+    event.preventDefault();
+
+    // Get input values
+    let fullName = $("#fullName").val().trim();
+    let whatsappNumber = document.querySelector("#whatsappNumber").value.trim();
+    let fileInput = document.getElementById("uploadCV");
+    let file = fileInput.files[0];
+
+    // Validation
+    let nameRegex = /^[a-zA-Z\s]+$/; 
+    let phoneRegex = /^\d{10}$/;
+
+
+    if (fullName === "" || !nameRegex.test(fullName)) {
+        swal("Invalid Name", "Please enter a valid full name (letters only).", "error");
+        return;
+    }
+
+    if (whatsappNumber === "" || !phoneRegex.test(whatsappNumber)) {
+        swal("Invalid Number", "Please enter a valid phone number.", "error");
+        return;
+    }
+
+    if (!file) {
+        swal("Missing CV", "Please upload your CV.", "error");
+        return;
+    }
+
+    // Read file as Base64
+    let reader = new FileReader();
+    reader.onload = function () {
+        let base64CV = reader.result.split(",")[1]; // Strip the data prefix
+
+        let formData = {
+            "Full Name": fullName,
+            "WhatsApp Number": whatsappNumber,
+            "CV Base64": base64CV,
+            "File Name": file.name
+        };
+
+        // Hide modal
+        $("#detailsModal").modal("hide");
+
+        // Send to Google Sheets
+        $.ajax({
+            url: scriptURL,
+            type: "POST",
+            data: formData,
+            contentType: "application/x-www-form-urlencoded",
+            success: function (response) {
+                console.log("Form submitted successfully", response);
+                swal("Success", "Form submitted successfully!", "success");
+            },
+            error: function (xhr, status, error) {
+                console.error("AJAX Error:", error);
+                swal("Error", "There was a problem submitting the form.", "error");
+            }
         });
+    };
+
+    reader.readAsDataURL(file);
+});
+
 
        
 
