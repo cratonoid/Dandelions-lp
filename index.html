@@ -158,6 +158,7 @@
       @media (max-width: 768px) {
         .py-5{
           padding-top:0rem !important;
+          padding-bottom: 0rem !important;
         }
         .site-section{
           padding-top: 0rem !important;
@@ -988,7 +989,7 @@ is a win-win for all.</p>
     <!-- Image Grid -->
     <div class="row align-items-stretch">
       <!-- Right Column Stacked Images -->
-      <div class="col-md-12 d-flex flex-column justify-content-between">
+      <div class="img-stack col-md-12 d-flex flex-column justify-content-between">
         <img src="images/gp7.png" alt="Image 1" class="img-fluid stacked-img rounded mb-3">
         <img src="images/gp8.png" alt="Image 1" class="img-fluid stacked-img rounded mb-3">
         <img src="images/gp9.png" alt="Image 1" class="img-fluid stacked-img rounded mb-3">
@@ -1029,11 +1030,19 @@ is a win-win for all.</p>
 }
 
 @media (max-width: 768px) {
+  .img-stack{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .cont-mob{
+    margin-top: 2rem;
+  }
   .image-desktop{
     display: none;
   }
     .image-mobile{
     display: block;
+    margin-top: 6rem;
   }
 }
 </style>
@@ -1865,7 +1874,7 @@ The operator and other persons who have access to personal data are obliged not 
       const $card = $icon.closest('.col-md-3').find('.eligibility-card-mobile');
 
       $card.slideToggle();                     // Show/hide the card
-      $icon.toggleClass('rotated');            // Rotate arrow
+      $icon.toggleClass('rotated`');            // Rotate arrow
     });
   });
 </script>
