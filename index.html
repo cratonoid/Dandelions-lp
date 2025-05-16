@@ -539,10 +539,11 @@ h2.d-flex.align-items-center {
 
 
 <!-- WHY CHOOSE US Section -->
-<div class="site-section py-5" style="background-image: url('images/sec_backg.png'); background-size: cover; background-position: center;" id="wedo-section">
+<div class="site-section py-5" style="margin-top: 2rem; background-image: url('images/sec_backg.png'); background-size: cover; background-position: center;" id="wedo-section">
   <div class="container">
 
-    <div class="text-center" style="transform: translate(0%, -45%);">
+    <div class="text-center" style= "transform: translate(0%, -95%); position: relative;"
+    >
     <button class="connect-button" data-bs-toggle="modal" data-bs-target="#detailsModal"  >
       Showcase Hidden Skills
     </button>
@@ -552,14 +553,14 @@ h2.d-flex.align-items-center {
     <!-- Heading -->
     <div class="row mb-5 text-center">
       <div class="col-12">
-        <h2 style="color: #000000; font-weight: 900;">WHY CHOOSE US</h2>
+        <h2 style="color: #ffffff; font-weight: 900;">WHY CHOOSE US</h2>
       </div>
     </div>
 
     <!-- Top Row: 3 Sets -->
     <div class="row justify-content-center ">
       <!-- Set 1 -->
-      <div class="col-md-4 mb-4">
+      <div class="col-md-4 ">
         <div class="dual-box">
           <div class="box black-box">
             <h5>Problem</h5>
@@ -579,7 +580,7 @@ their organization.</p>
       </div>
 
       <!-- Set 2 -->
-      <div class="col-md-4 mb-4">
+      <div class="col-md-4 ">
         <div class="dual-box">
           <div class="box black-box">
             <h5>Problem</h5>
@@ -599,7 +600,7 @@ Q&As.</p>
       </div>
 
       <!-- Set 3 -->
-      <div class="col-md-4 mb-4">
+      <div class="col-md-4 ">
         <div class="dual-box">
           <div class="box black-box">
             <h5>Problem</h5>
@@ -624,7 +625,7 @@ your soft-skills and personality traits</p>
     <!-- Bottom Row: 2 Centered Sets -->
     <div class="row justify-content-center">
       <!-- Set 4 -->
-      <div class="col-md-4 mb-4">
+      <div class="col-md-4 ">
         <div class="dual-box">
           <div class="box black-box">
             <h5>Problem</h5>
@@ -647,7 +648,7 @@ recruitment.</p>
       </div>
 
       <!-- Set 5 -->
-      <div class="col-md-4 mb-4">
+      <div class="col-md-4 ">
         <div class="dual-box">
           <div class="box black-box">
             <h5>Problem</h5>
@@ -667,7 +668,7 @@ is a win-win for all.</p>
         </div>
       </div>
     </div>
-    <div class="text-center" style="transform: translate(0%, -45%);">
+    <div class="text-center" style="transform: translate(0%, 120%);  position: relative;">
     <button class="connect-button" data-bs-toggle="modal" data-bs-target="#detailsModal"  >
       Get Multiple Offers
     </button>
@@ -680,14 +681,22 @@ is a win-win for all.</p>
 <!-- Styles -->
 <style>
 .dual-box {
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   border-radius: 12px;
   overflow: hidden;
+
+    height: 100%; /* Ensures child boxes can grow */
+  justify-content: space-between;
 }
 
 .box {
   padding: 20px;
+
+    flex: 1; /* Makes both black and white boxes take equal vertical space */
+  display: flex;
+  flex-direction: column;
 }
 
 .black-box {
@@ -696,12 +705,16 @@ is a win-win for all.</p>
   font-weight: 600;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
 }
 
 .white-box {
   background-color: #fff;
   color: #000;
   font-weight: 500;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
@@ -714,25 +727,25 @@ is a win-win for all.</p>
 <div class="section-with-images py-5">
   <div class="container">
     <!-- Heading -->
-    <div class="col-12 text-center mb-5">
+    <div class="col-12 text-center mb-4">
       <h2 style="color: #000; font-weight: 900;">Why Apply for Dubai’s IT Sector?</h2>
     </div>
 
     <!-- Image Grid -->
     <div class="row align-items-stretch">
       <!-- Left Person Image -->
-      <div class="col-md-6 mb-4 mb-md-0">
+      <div class="col-md-6 mb-md-0">
         <img src="images/person.png" alt="Person" class="img-fluid full-height-img rounded">
       </div>
 
       <!-- Right Column Stacked Images -->
       <div class="col-md-6 d-flex flex-column justify-content-between">
-        <img src="images/gp1.png" alt="Image 1" class="img-fluid mb-3 stacked-img rounded">
-        <img src="images/gp2.png" alt="Image 1" class="img-fluid mb-3 stacked-img rounded">
-        <img src="images/gp3.png" alt="Image 1" class="img-fluid mb-3 stacked-img rounded">
-        <img src="images/gp4.png" alt="Image 1" class="img-fluid mb-3 stacked-img rounded">
-        <img src="images/gp5.png" alt="Image 1" class="img-fluid mb-3 stacked-img rounded">
-        <img src="images/gp6.png" alt="Image 1" class="img-fluid mb-3 stacked-img rounded">
+        <img src="images/gp1.png" alt="Image 1" class="img-fluid stacked-img rounded">
+        <img src="images/gp2.png" alt="Image 1" class="img-fluid stacked-img rounded">
+        <img src="images/gp3.png" alt="Image 1" class="img-fluid stacked-img rounded">
+        <img src="images/gp4.png" alt="Image 1" class="img-fluid stacked-img rounded">
+        <img src="images/gp5.png" alt="Image 1" class="img-fluid stacked-img rounded">
+        <img src="images/gp6.png" alt="Image 1" class="img-fluid stacked-img rounded">
         
       </div>
     </div>
@@ -754,7 +767,7 @@ is a win-win for all.</p>
 
 .stacked-img {
   height: 30%;
-  object-fit: cover;
+  object-fit: contain;
   width: 100%;
 }
 </style>
@@ -780,7 +793,7 @@ is a win-win for all.</p>
     </div>
 
     <!-- Text Boxes Grid -->
-    <div class="row text-center justify-content-center mb-5">
+    <div class="row text-center justify-content-center " style="padding-top: 1rem;">
       <div class="col-md-3 mb-3">
         <div class="who-box">Psychological tests</div>
       </div>
@@ -805,13 +818,13 @@ is a win-win for all.</p>
 
     <!-- Images Row -->
     <div class="row text-center justify-content-center">
-      <div class="col-md-4 mb-4">
+      <div class="col-md-4">
         <img src="images/im2.png" alt="Image 1" class="who-img">
       </div>
-      <div class="col-md-4 mb-4">
+      <div class="col-md-4">
         <img src="images/im3.png" alt="Image 2" class="who-img">
       </div>
-      <div class="col-md-4 mb-4">
+      <div class="col-md-4">
         <img src="images/img_1.jpg" alt="Image 3" class="who-img">
       </div>
     </div>
@@ -846,14 +859,19 @@ is a win-win for all.</p>
     border-radius: 25px;
     margin: 3%;
     padding: 10px;
-    font-weight: 600;
+    font-weight: 700;
     color: #000;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .who-img {
   width: 100%;
-  border-radius: 10px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   object-fit: cover;
   height: 220px;
 }
@@ -865,7 +883,7 @@ is a win-win for all.</p>
 
   <!-- In the News -->
  <div class="container">
-    <div class="col-12 text-center what-bus-sec mb-5">
+    <div class="col-12 text-center what-bus-sec mb-4">
       <div class="block-heading-1">
         <h2 style="color: #000000; font-weight: 900;">IN THE NEWS</h2>
         
@@ -966,7 +984,7 @@ is a win-win for all.</p>
     <div class="text-center">
       
       <!-- Apply Now Button -->
-      <button class="connect-button" data-bs-toggle="modal" data-bs-target="#detailsModal" style="transform: translate(0%, -130%);">
+      <button class="connect-button" data-bs-toggle="modal" data-bs-target="#detailsModal" style="transform: translate(0%, -100%); POSITION: relative;">
         Apply Now
       </button>
 
