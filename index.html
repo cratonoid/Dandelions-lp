@@ -1434,7 +1434,7 @@ is a win-win for all.</p>
     <div class="text-center">
       
       <!-- Apply Now Button -->
-      <button class="connect-button" data-bs-toggle="modal" data-bs-target="#detailsModal" style="transform: translate(0%, -50%); POSITION: relative;">
+      <button class="connect-button" id="news-button" data-bs-toggle="modal" data-bs-target="#detailsModal" style="POSITION: relative;">
         Apply Now
       </button>
 
@@ -1485,9 +1485,17 @@ is a win-win for all.</p>
     margin: 0 1.5rem;
     transition: transform 0.3s ease;
 }
-
+#news-button{
+  transform: translate(0%, -85%);
+}
 .social-icon:hover img {
   transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+  #news-button{
+  transform: translate(0%, -60%);
+}
 }
 
 
