@@ -218,7 +218,7 @@
 
       <div class="col-md-3 mb-4">
         <div class="card-heading-wrapper">
-          <img src="images/sec8.jpeg" alt="icon" class="card-icon" />
+          <img src="images/sec5.jpeg" alt="icon" class="card-icon" />
         <h5 class="card-heading">DevOps and CI/CD</h5>
         </div>
         <div class="eligibility-card p-3">
@@ -236,7 +236,7 @@
 
       <div class="col-md-3 mb-4">
         <div class="card-heading-wrapper">
-          <img src="images/sec7.jpeg" alt="icon" class="card-icon" />
+          <img src="images/sec8.jpeg" alt="icon" class="card-icon" />
         <h5 class="card-heading">Testing & Quality Assurance</h5>
         </div>
         <div class="eligibility-card p-3">
@@ -253,7 +253,7 @@
 
       <div class="col-md-3 mb-4">
         <div class="card-heading-wrapper">
-          <img src="your-icon-path.png" alt="icon" class="card-icon" />
+          <img src="images/sec7.jpeg" alt="icon" class="card-icon" />
         <h5 class="card-heading">Cloud Platforms</h5>
         </div>
         <div class="eligibility-card p-3">
@@ -278,11 +278,17 @@
     </div>
 
     <!-- Apply Now Button -->
-    <div class="text-center mt-4">
-      <button class="connect-button btn-gradient" data-bs-toggle="modal" data-bs-target="#detailsModal" style="transform: translate(0%, 190%);">
-        Apply Now
+    <div class="text-center" style="transform: translate(0%, 165%);">
+      <button class="connect-button btn-gradient" data-bs-toggle="modal" data-bs-target="#detailsModal" >
+        Join Recruiter Community
       </button>
+      <p>
+         Connect with network of recruiters looking for above skills
+              </p>
+     
     </div>
+    
+    
 
   </div>
 </div>
@@ -290,7 +296,12 @@
 
 
 <style>
+  p{
+    font-size: 0.8rem !important;
+    margin-bottom: 0rem !important;
+  }
   .subheading-gradient{
+    font-size: 1rem !important;
     font-weight: 600;
   }
   .eligibility-card, .card-heading-wrapper{
@@ -300,16 +311,17 @@
   }
 
   .eligibility-card {
+    line-height: 1.2 !important;
     background: white;
     border-radius: 12px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    height: 85%;
+    height: 75%;
     position: relative;
     border: solid #add43d;
 
 }
 .card-heading-wrapper {
-  background: linear-gradient(90deg, #cee9fe, #9ad1fe); /* Gradient background */
+  background: linear-gradient(90deg, #cee9fe2b, #9ad1fe); /* Gradient background */
   /* border-radius: 25px; */
   /* padding: 10px 15px; */
   display: flex;
@@ -325,17 +337,17 @@
 
 }
 .card-icon {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  object-fit: cover;
-  background-color: white; /* fallback bg */
-  padding: 2px;
+      width: auto;
+    height: 54px;
+    border-radius: 44%;
+    object-fit: cover;
+    background-color: white;
+    padding: 2px;
 }
 .card-heading {
   color: rgb(0, 0, 0);
   margin: 0;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 700;
 }
 
@@ -385,7 +397,7 @@ h2.d-flex.align-items-center {
 </style>
 
 <!-- Recruitment Process -->
-  <div class="container">
+  <div class="container" style="margin-top: 4rem;">
 
     <div class="col-12 text-center mt-5">
       <div class="block-heading-1">
@@ -410,10 +422,10 @@ h2.d-flex.align-items-center {
     </div>
 
     <!-- Cards Grid -->
-    <div class="row text-center">
+    <div class="row">
       <div class="col-md-3">
-        <div class="eligibility-card p-3">
-          <h5>Priya Menon</h5>
+        <div class="eligibility-card-3 p-3">
+          <h5 class="rnames">Priya Menon</h5>
           <p>Full Stack Developer for a Dubai-based Fintech</p></BR>
           <p> "Dandelion changed 
               everything for me. I wasn’t 
@@ -432,8 +444,8 @@ h2.d-flex.align-items-center {
       </div>
 
       <div class="col-md-3">
-        <div class="eligibility-card p-3">
-          <h5>Rajesh Iyer</h5>
+        <div class="eligibility-card-3 p-3">
+          <h5 class="rnames">Rajesh Iyer</h5>
           <p>Cloud Solutions Architect 
             for a UAE Tech Firm</p></BR>
           <p> "I’ve always wanted to work 
@@ -453,8 +465,8 @@ h2.d-flex.align-items-center {
       </div>
 
       <div class="col-md-3">
-        <div class="eligibility-card p-3">
-          <h5>Neha Raut</h5>
+        <div class="eligibility-card-3 p-3">
+          <h5 class="rnames">Neha Raut</h5>
           <p>Data Analyst for a Dubai Logistics Startup</p></BR>
           <p>"The simulation-based tasks 
               on Dandelion were so 
@@ -472,8 +484,8 @@ h2.d-flex.align-items-center {
       </div>
 
       <div class="col-md-3">
-        <div class="eligibility-card p-3">
-          <h5>Sandeep Verma</h5>
+        <div class="eligibility-card-3 p-3">
+          <h5 class="rnames">Sandeep Verma</h5>
           <p>DevOps Engineer at a Dubai Cloud Services Company</p></BR>
           <p>"I wasn’t expecting much 
               when I signed up, but 
@@ -489,26 +501,57 @@ h2.d-flex.align-items-center {
               work and great pay from 
               home."</p>
         </div>
-      </div>
-
-      
+      </div>      
     </div>
-
 </div>
+
+<style>
+  .rnames{
+    font-weight: 600;
+  }
+  .eligibility-card-3{
+  margin-left: 3%;
+  margin-right: 3%;
+    
+  }
+
+  .eligibility-card-3 {
+    align-items: start;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    height: 95%;
+    position: relative;
+    border: solid #add43d;
+
+}
+
+
+
+@media (max-width: 768px) {
+  .eligibility-card-3 {
+    margin-bottom: 20px;
+  }
+
+  }
+</style>
 
 
 <!-- wHY CHOOSE US -->
   <div class="cont">
 <div class="site-section" style="background-image: url('images/sec_backg.png'); background-size: cover; background-position: center;" id="wedo-section">
-  <div class="text-center mt-4">
-    <button class="connect-button" data-bs-toggle="modal" data-bs-target="#detailsModal" style="transform: translate(0%, -130%);" >
-      Let's Connect
+  <div class="text-center" style="transform: translate(0%, -45%);">
+    <button class="connect-button" data-bs-toggle="modal" data-bs-target="#detailsModal"  >
+      Showcase Hidden Skills
     </button>
+    <p>
+         Connect with network of recruiters looking for above skills
+              </p>
   <div class="container text-center">
     <div class="row roww mb-5">
       <div class="col-12">
         <div class="block-heading-1">
-          <h2 style="color:  #000000; font-weight: 900">Apply Now</h2>
+          <h2 style="color:  #000000; font-weight: 900">WHY CHOOSE US</h2>
         </div>
       </div>
     </div>
@@ -518,25 +561,156 @@ h2.d-flex.align-items-center {
 </div>
  </div>
 
-<!-- Who we are Section -->
- <div class="container py-5">
-    <div class="col-12 text-center what-bus-sec mb-5">
-      <div class="block-heading-1">
-        <h2 style="color: #000000; font-weight: 900;">WHO WE ARE</h2>
-        
-      </div>
-      <div>
-        <p style="color: #000000; font-weight: 500;">We are a Gamified Talent Management Platform that offers a personalized dynamic map for career 
-        design, that contains non-obvious development mechanics and assists in making strategic career 
-        decisions. With our platform, you can accomplish:</p>
 
-        <p style="color: #000000; font-weight: 500;">We offer you the opportunity to showcase your true potential through an engaging and interactive virtual 
-        experience. Our gamified assessments are designed to highlight your strengths, skills, and unique 
-        qualities in a fun, low-pressure environment—giving you a fair chance to stand out and match with roles 
-        that truly fit you.</p>
+<!-- Why apply section -->
+<div class="section-with-images py-5">
+  <div class="container">
+    <!-- Heading -->
+    <div class="col-12 text-center mb-5">
+      <h2 style="color: #000; font-weight: 900;">Why Apply for Dubai’s IT Sector?</h2>
+    </div>
+
+    <!-- Image Grid -->
+    <div class="row align-items-stretch">
+      <!-- Left Person Image -->
+      <div class="col-md-6 mb-4 mb-md-0">
+        <img src="images/person.png" alt="Person" class="img-fluid full-height-img rounded">
+      </div>
+
+      <!-- Right Column Stacked Images -->
+      <div class="col-md-6 d-flex flex-column justify-content-between">
+        <img src="images/gp1.png" alt="Image 1" class="img-fluid mb-3 stacked-img rounded">
+        <img src="images/gp2.png" alt="Image 1" class="img-fluid mb-3 stacked-img rounded">
+        <img src="images/gp3.png" alt="Image 1" class="img-fluid mb-3 stacked-img rounded">
+        <img src="images/gp4.png" alt="Image 1" class="img-fluid mb-3 stacked-img rounded">
+        <img src="images/gp5.png" alt="Image 1" class="img-fluid mb-3 stacked-img rounded">
+        <img src="images/gp6.png" alt="Image 1" class="img-fluid mb-3 stacked-img rounded">
+        
       </div>
     </div>
   </div>
+</div>
+
+<!-- Styles -->
+<style>
+.section-with-images {
+  background-color: #f2f9ff; /* light background */
+}
+
+.full-height-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  min-height: 100%;
+}
+
+.stacked-img {
+  height: 30%;
+  object-fit: cover;
+  width: 100%;
+}
+</style>
+
+
+
+ 
+<!-- Who we are Section -->
+<div class="who-we-are-section py-5">
+  <div class="container">
+    <!-- Heading and Paragraphs -->
+    <div class="col-12 text-center mb-5">
+      <div class="block-heading-1">
+        <h2 style="color: #000000; font-weight: 900;">WHO WE ARE</h2>
+      </div>
+      <p class="who-we-para">
+        We are a Gamified Talent Management Platform that offers a personalized dynamic map for career 
+        design, that contains non-obvious development mechanics and assists in making strategic career 
+        decisions. With our platform, you can accomplish:
+      </p>
+      
+      </p>
+    </div>
+
+    <!-- Text Boxes Grid -->
+    <div class="row text-center justify-content-center mb-5">
+      <div class="col-md-3 mb-3">
+        <div class="who-box">Psychological tests</div>
+      </div>
+      <div class="col-md-3 mb-3">
+        <div class="who-box">Sociological tests</div>
+      </div>
+      <div class="col-md-3 mb-3">
+        <div class="who-box">Intelligence tests</div>
+      </div>
+      <div class="col-md-3 mb-3">
+        <div class="who-box">Creativity tests</div>
+      </div>
+    </div>
+    <div class="row text-center justify-content-center mb-5">
+      <div class="col-md-3 mb-3">
+        <div class="who-box">Soft skills tests</div>
+      </div>
+      <div class="col-md-3 mb-3">
+        <div class="who-box">Hard skills tests</div>
+      </div>
+    </div>
+
+    <!-- Images Row -->
+    <div class="row text-center justify-content-center">
+      <div class="col-md-4 mb-4">
+        <img src="images/im2.png" alt="Image 1" class="who-img">
+      </div>
+      <div class="col-md-4 mb-4">
+        <img src="images/im3.png" alt="Image 2" class="who-img">
+      </div>
+      <div class="col-md-4 mb-4">
+        <img src="images/img_1.jpg" alt="Image 3" class="who-img">
+      </div>
+    </div>
+
+    <div class="col-12 text-center mb-5">      
+      
+      <p class="who-we-para">
+        We offer you the opportunity to showcase your true potential through an engaging and interactive virtual 
+        experience. Our gamified assessments are designed to highlight your strengths, skills, and unique 
+        qualities in a fun, low-pressure environment—giving you a fair chance to stand out and match with roles 
+        that truly fit you.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Styles -->
+<style>
+.who-we-are-section {
+  background-color: #e6f2ff; /* Light blue background */
+}
+
+.who-we-para {
+  color: #000000;
+  font-weight: 500;
+  max-width: 900px;
+  margin: 0 auto 20px auto;
+}
+
+.who-box {
+    background: linear-gradient(90deg, #cee9fe2b, #9ad1fe);
+    border-radius: 25px;
+    margin: 3%;
+    padding: 10px;
+    font-weight: 600;
+    color: #000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.who-img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  height: 220px;
+}
+</style>
+
 
 
 
@@ -552,40 +726,28 @@ h2.d-flex.align-items-center {
 
     <!-- Cards Grid -->
     <div class="row text-center">
-      <div class="col-md-3 mb-4">
-        <div class="eligibility-card-2 p-3">
-          <h5>Gaming meets hiring: Dubai
-based recruitment platform 
-to address job market 
-disconnec</h5>          
-          
+      
+      <div class="col-md-3">
+        <div class="eligibility-card-2">
+          <img src="images/news1.png" class="news-image" alt="News Image">
         </div>
       </div>
 
-      <div class="col-md-3 mb-4">
-        <div class="eligibility-card-2 p-3">
-          <h5>UAE jobs: How your next job 
-application might look like a 
-video game</h5>
-          
+      <div class="col-md-3">
+        <div class="eligibility-card-2">
+          <img src="images/news3.png" class="news-image" alt="News Image">
         </div>
       </div>
 
-      <div class="col-md-3 mb-4">
-        <div class="eligibility-card-2 p-3">
-          <h5>Dubai Startup Dandelion 
-Civilization to Enhance Hiring 
-Efficiency by 40% with 
-Gamification</h5>
-          
+      <div class="col-md-3">
+        <div class="eligibility-card-2 ">
+          <img src="images/news2.png" class="news-image" alt="News Image">
         </div>
       </div>
 
-      <div class="col-md-3 mb-4">
-        <div class="eligibility-card-2 p-3">
-          <h5>A Vision To Create A More 
-Co-Leadership System </h5>
-       
+      <div class="col-md-3">
+        <div class="eligibility-card-2">
+          <img src="images/news4.png" class="news-image" alt="News Image">
         </div>
       </div>
 
@@ -604,12 +766,33 @@ Co-Leadership System </h5>
 
   .eligibility-card-2 {
     background: white;
-    border-radius: 12px;
+    border-radius: 20px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     height: 95%;
     position: relative;
     border: solid #add43d;
 
+}
+.eligibility-card-2 {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 0;
+}
+
+.news-image {
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.news-text {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px;
+  text-align: left;
+  color: #1a508b;
 }
 
 
