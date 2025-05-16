@@ -150,9 +150,12 @@
     <div class="row text-center">
       <!-- Repeat this block 8 times for each card -->
       <div class="col-md-3 mb-4">
+        <div class="card-heading-wrapper">
+          <img src="your-icon-path.png" alt="icon" class="card-icon" />
         <h5 class="card-heading">Programming Languages</h5>
+        </div>
         <div class="eligibility-card p-3">
-          <h5>Primary language proficiency:</h5>
+          <h5 class="subheading-gradient">Primary language proficiency:</h5>
           <p>Java, Spring Boot, Python (Django/Flask), JavaScript – full-stack (Node.js + React/Vue)</p>
           <h5> Secondary or supporting languages:</h5>
           <p>C# – .NET, PHP, Kotlin, TypeScript (Angular, React)</p>
@@ -160,7 +163,10 @@
       </div>
 
       <div class="col-md-3 mb-4">
+        <div class="card-heading-wrapper">
+          <img src="your-icon-path.png" alt="icon" class="card-icon" />
         <h5 class="card-heading">Frontend Development</h5>
+        </div>
         <div class="eligibility-card p-3">
           <h5>Web technologies:</h5>
           <p> HTML5, CSS3, JavaScript (ES6+)</p>
@@ -172,7 +178,10 @@
       </div>
 
       <div class="col-md-3 mb-4">
+        <div class="card-heading-wrapper">
+          <img src="your-icon-path.png" alt="icon" class="card-icon" />
         <h5 class="card-heading">Backend Development</h5>
+        </div>
         <div class="eligibility-card p-3">
           <h5>Frameworks and ecosystems:</h5>
           <p> Spring Boot (Java) – REST APIs, Node.js + Express, Django / Flask (Python), ASP.NET Core (C#), Laravel (PHP)</p>
@@ -182,7 +191,10 @@
       </div>
 
       <div class="col-md-3 mb-4">
+        <div class="card-heading-wrapper">
+          <img src="your-icon-path.png" alt="icon" class="card-icon" />
         <h5 class="card-heading">Databases</h5>
+        </div>
         <div class="eligibility-card p-3">
           <h5>Relational databases (RDBMS):</h5>
           <p>MySQL, PostgreSQL, SQL Server / Oracle DB</p>
@@ -192,7 +204,10 @@
       </div>
 
       <div class="col-md-3 mb-4">
+        <div class="card-heading-wrapper">
+          <img src="your-icon-path.png" alt="icon" class="card-icon" />
         <h5 class="card-heading">Cloud Platforms</h5>
+        </div>
         <div class="eligibility-card p-3">
           <h5> Working knowledge of major providers:</h5>
           <p>AWS (EC2, S3, RDS, Lambda, CloudWatch, IAM), Azure (App Services, Functions, Blob Storage, DevOps pipelines), GCP (Compute Engine, Cloud Functions, Firestore)</p>
@@ -202,7 +217,10 @@
       </div>
 
       <div class="col-md-3 mb-4">
+        <div class="card-heading-wrapper">
+          <img src="your-icon-path.png" alt="icon" class="card-icon" />
         <h5 class="card-heading">DevOps and CI/CD</h5>
+        </div>
         <div class="eligibility-card p-3">
           <h5>Version control & collaboration:</h5>
           <p>Git, GitHub, GitLab, Bitbucket</p>
@@ -217,7 +235,10 @@
       </div>
 
       <div class="col-md-3 mb-4">
+        <div class="card-heading-wrapper">
+          <img src="your-icon-path.png" alt="icon" class="card-icon" />
         <h5 class="card-heading">Testing & Quality Assurance</h5>
+        </div>
         <div class="eligibility-card p-3">
           <h5>Unit testing frameworks:</h5>
           <p>JUnit, TestNG (Java), PyTest (Python), Jest (JavaScript)</p>
@@ -231,7 +252,10 @@
       </div>
 
       <div class="col-md-3 mb-4">
+        <div class="card-heading-wrapper">
+          <img src="your-icon-path.png" alt="icon" class="card-icon" />
         <h5 class="card-heading">Cloud Platforms</h5>
+        </div>
         <div class="eligibility-card p-3">
           <h5>API development & consumption:</h5>
           <p>RESTful APIs, GraphQL</p>
@@ -266,21 +290,46 @@
 
 
 <style>
+  .eligibility-card, .card-heading-wrapper{
+  margin-left: 3%;
+  margin-right: 3%;
+    
+  }
+
   .eligibility-card {
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  height: 100%;
-  margin: 5%;
-  border: solid #add43d;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    height: 85%;
+    position: relative;
+    border: solid #add43d;
 
 }
-
+.card-heading-wrapper {
+  background: linear-gradient(90deg, #cee9fe, #9ad1fe); /* Gradient background */
+  border-radius: 25px;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.card-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: white; /* fallback bg */
+  padding: 2px;
+}
 .card-heading {
+  color: rgb(0, 0, 0);
+  margin: 0;
+  font-size: 18px;
   font-weight: 700;
-  margin-bottom: 10px;
-  color: #1a508b;
 }
+
+
 .mb-4 {
   padding-top: 6%;
 }
@@ -494,7 +543,7 @@ h2.d-flex.align-items-center {
     <!-- Cards Grid -->
     <div class="row text-center">
       <div class="col-md-3 mb-4">
-        <div class="eligibility-card p-3">
+        <div class="eligibility-card-2 p-3">
           <h5>Gaming meets hiring: Dubai
 based recruitment platform 
 to address job market 
@@ -504,7 +553,7 @@ disconnec</h5>
       </div>
 
       <div class="col-md-3 mb-4">
-        <div class="eligibility-card p-3">
+        <div class="eligibility-card-2 p-3">
           <h5>UAE jobs: How your next job 
 application might look like a 
 video game</h5>
@@ -513,7 +562,7 @@ video game</h5>
       </div>
 
       <div class="col-md-3 mb-4">
-        <div class="eligibility-card p-3">
+        <div class="eligibility-card-2 p-3">
           <h5>Dubai Startup Dandelion 
 Civilization to Enhance Hiring 
 Efficiency by 40% with 
@@ -523,7 +572,7 @@ Gamification</h5>
       </div>
 
       <div class="col-md-3 mb-4">
-        <div class="eligibility-card p-3">
+        <div class="eligibility-card-2 p-3">
           <h5>A Vision To Create A More 
 Co-Leadership System </h5>
        
@@ -535,30 +584,106 @@ Co-Leadership System </h5>
 
 </div>
 
+<style>
+
+    .eligibility-card-2{
+  margin-left: 3%;
+  margin-right: 3%;
+    
+  }
+
+  .eligibility-card-2 {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    height: 95%;
+    position: relative;
+    border: solid #add43d;
+
+}
+
+
+
+@media (max-width: 768px) {
+  .eligibility-card-2 {
+    margin-bottom: 20px;
+  }
+
+  }
+
+  
+</style>
+
+
 
 
 
 
 <!-- Footer -->
+<div class="cont">
+  <div class="site-section" style="background-color: #d3f478;" id="footer-section">
+    <div class="text-center">
+      
+      <!-- Apply Now Button -->
+      <button class="connect-button" data-bs-toggle="modal" data-bs-target="#detailsModal" style="transform: translate(0%, -130%);">
+        Apply Now
+      </button>
 
-  <div class="cont">
-<div class="site-section" style="background-color: #d3f478;" id="footer-section">
-  <div class="text-center mt-4">
-    <button class="connect-button" data-bs-toggle="modal" data-bs-target="#detailsModal" style="transform: translate(0%, -130%);" >
-      Apply Now
-    </button>
-  <div class="container text-center">
-    <div class="row roww mb-5">
-      <div class="col-12">
+      <!-- Social Media Icons -->
+      <div class="container text-center ">
+        <div class="row justify-content-center">
+          <div class="col-auto">
+            <a href="https://www.facebook.com/dandelion.civilization/" target="_blank" class="social-icon">
+              <img src="images/face.png" alt="Facebook">
+            </a>
+          </div>
+          <div class="col-auto">
+            <a href="https://www.instagram.com/dandelion.civilization/" target="_blank" class="social-icon">
+              <img src="images/inst.png" alt="Instagram">
+            </a>
+          </div>
+          <div class="col-auto">
+            <a href="https://www.youtube.com/@DandelionCivilization" target="_blank" class="social-icon">
+              <img src="images/you.png" alt="YouTube">
+            </a>
+          </div>
+          <div class="col-auto">
+            <a href="https://www.linkedin.com/company/dandelion-civilization/" target="_blank" class="social-icon">
+              <img src="images/link.png" alt="LinkedIn">
+            </a>
+          </div>
+        </div>
+
         
-      </div>
+        </div>
+        
+
     </div>
+    <!-- Copyright -->
+        <div class="row text-center mt-4">
+          <div class="col-12">
+            <p class="mb-0" style="font-size: 14px;">Copyright &copy; 2024 Dandelion Civilization. All Rights Reserved.</p>
+          </div>
+      </div>
   </div>
 </div>
-</div>
-</div>
- </div>
+
 <style>
+.social-icon img {
+  width: 5rem;
+    border-radius: 1rem;
+    height: auto;
+    margin: 0 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover img {
+  transform: scale(1.2);
+}
+
+
+
+
   /* Desktop View */
   .cont {
     padding-top: 10%;
