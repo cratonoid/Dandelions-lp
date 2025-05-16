@@ -2127,26 +2127,42 @@ The operator and other persons who have access to personal data are obliged not 
     });
   });
 </script>
+
 <script>
   $(document).ready(function () {
+    // For eligibility section
     $('.eligibility-mobile-card').click(function () {
-      const $card = $(this).closest('.col-md-3');                        // Find the parent card
-      const $content = $card.find('.eligibility-card-mobile');          // Target card content
-      const $arrow = $(this).find('.arrow-icon-mobile');    // Target arrow
+      const $card = $(this).closest('.col-md-3');
+      const $content = $card.find('.eligibility-card-mobile');
+      const $arrow = $(this).find('.arrow-icon-mobile');
 
-      $content.slideToggle();             // Toggle content visibility
+      // Close all other cards
+      $('.eligibility-card-mobile').not($content).slideUp();
+      $('.arrow-icon-mobile').not($arrow).removeClass('rotated');
+
+      // Toggle current
+      $content.slideToggle();
       $arrow.toggleClass('rotated');
     });
-    $('.certificate-card').click(function () {
-      const $card = $(this).closest('.col-md-3');                        // Find the parent card
-      const $content = $card.find('.certificate-card-mobile');          // Target card content
-      const $arrow = $(this).find('.arrow-icon-certificate-mobile');    // Target arrow
 
-      $content.slideToggle();             // Toggle content visibility
-      $arrow.toggleClass('rotated');      // Rotate the arrow
+    // For certificate section
+    $('.certificate-card').click(function () {
+      const $card = $(this).closest('.col-md-3');
+      const $content = $card.find('.certificate-card-mobile');
+      const $arrow = $(this).find('.arrow-icon-certificate-mobile');
+
+      // Close all other cards
+      $('.certificate-card-mobile').not($content).slideUp();
+      $('.arrow-icon-certificate-mobile').not($arrow).removeClass('rotated');
+
+      // Toggle current
+      $content.slideToggle();
+      $arrow.toggleClass('rotated');
     });
   });
 </script>
+
+
 <script>
   function updateDots() {
     const slider = document.getElementById('reviewSlider');
