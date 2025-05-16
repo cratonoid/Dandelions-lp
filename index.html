@@ -1260,17 +1260,18 @@ is a win-win for all.</p>
 
 
     <!-- Images Row -->
-    <div class="row text-center justify-content-center">
-      <div class="col-md-4">
+    <div class="row flex-nowrap overflow-auto mobile-slider image-slider" id="imageSlider">
+      <div class="col-10 col-md-4 me-3">
         <img src="images/im2.png" alt="Image 1" class="who-img">
       </div>
-      <div class="col-md-4">
+      <div class="col-10 col-md-4 me-3">
         <img src="images/im3.png" alt="Image 2" class="who-img">
       </div>
-      <div class="col-md-4">
+      <div class="col-10 col-md-4 me-3">
         <img src="images/im1.png" alt="Image 3" class="who-img">
       </div>
     </div>
+
 
     <div class="col-12 text-center mb-5">      
       
@@ -1335,36 +1336,36 @@ is a win-win for all.</p>
     </div>
 
     <!-- Cards Grid -->
-    <div class="row text-center">
-      
-      <div class="col-md-3">
+    <div class="row flex-nowrap overflow-auto mobile-slider news-slider" id="newsSlider" onscroll="updateNewsDots()">
+      <div class="col-10 col-md-3 me-3">
         <div class="eligibility-card-2">
           <img src="images/news1.png" class="news-image" alt="News Image">
         </div>
       </div>
-
-      <div class="col-md-3">
+      <div class="col-10 col-md-3 me-3">
         <div class="eligibility-card-2">
           <img src="images/news3.png" class="news-image" alt="News Image">
         </div>
       </div>
-
-      <div class="col-md-3">
-        <div class="eligibility-card-2 ">
+      <div class="col-10 col-md-3 me-3">
+        <div class="eligibility-card-2">
           <img src="images/news2.png" class="news-image" alt="News Image">
         </div>
       </div>
-
-      <div class="col-md-3">
+      <div class="col-10 col-md-3 me-3">
         <div class="eligibility-card-2">
           <img src="images/news4.png" class="news-image" alt="News Image">
         </div>
       </div>
-
-      
     </div>
 
-</div>
+    <div class="slider-dots text-center mt-3" id="newsSliderDots">
+      <span class="dot active" onclick="scrollNewsToSlide(0)"></span>
+      <span class="dot" onclick="scrollNewsToSlide(1)"></span>
+      <span class="dot" onclick="scrollNewsToSlide(2)"></span>
+      <span class="dot" onclick="scrollNewsToSlide(3)"></span>
+    </div>
+
 
 <style>
 
@@ -2081,6 +2082,34 @@ The operator and other persons who have access to personal data are obliged not 
     });
   }
 
+</script>
+
+<script>
+  const newsSlider = document.getElementById('newsSlider');
+const newsDots = document.getElementById('newsSliderDots').children;
+
+function scrollNewsToSlide(index) {
+  const slideWidth = newsSlider.children[0].offsetWidth + 16; // width + gap (adjust gap if needed)
+  newsSlider.scrollTo({
+    left: index * slideWidth,
+    behavior: 'smooth'
+  });
+  setActiveNewsDot(index);
+}
+
+function setActiveNewsDot(index) {
+  for (let dot of newsDots) dot.classList.remove('active');
+  if (newsDots[index]) newsDots[index].classList.add('active');
+}
+
+function updateNewsDots() {
+  const scrollLeft = newsSlider.scrollLeft;
+  const slideWidth = newsSlider.children[0].offsetWidth + 16; // width + gap
+  const index = Math.round(scrollLeft / slideWidth);
+  setActiveNewsDot(index);
+}
+
+newsSlider.addEventListener('scroll', updateNewsDots);
 </script>
 
     
