@@ -330,7 +330,7 @@
      <div class="row text-center  mobile-eligibility">
       <!-- Repeat this block 8 times for each card -->
       <div class="col-md-3">
-        <div class="card-heading-wrapper">
+        <div class="card-heading-wrapper eligibility-mobile-card">
           <img src="images/sec1.jpeg" alt="icon" class="card-icon" />
         <h5 class="card-heading">Programming Languages</h5>
         <span class="arrow-icon-mobile">&#9660;</span>
@@ -344,7 +344,7 @@
       </div>
 
       <div class="col-md-3">
-        <div class="card-heading-wrapper">
+        <div class="card-heading-wrapper eligibility-mobile-card">
           <img src="images/sec3.jpeg" alt="icon" class="card-icon" />
         <h5 class="card-heading">Frontend Development</h5>
         <span class="arrow-icon-mobile">&#9660;</span>
@@ -360,7 +360,7 @@
       </div>
 
       <div class="col-md-3">
-        <div class="card-heading-wrapper">
+        <div class="card-heading-wrapper eligibility-mobile-card">
           <img src="images/sec2.jpeg" alt="icon" class="card-icon" />
         <h5 class="card-heading">Backend Development</h5>
         <span class="arrow-icon-mobile">&#9660;</span>
@@ -374,7 +374,7 @@
       </div>
 
       <div class="col-md-3">
-        <div class="card-heading-wrapper">
+        <div class="card-heading-wrapper eligibility-mobile-card">
           <img src="images/sec4.jpeg" alt="icon" class="card-icon" />
         <h5 class="card-heading">Databases</h5>
         <span class="arrow-icon-mobile">&#9660;</span>
@@ -388,7 +388,7 @@
       </div>
 
       <div class="col-md-3">
-        <div class="card-heading-wrapper">
+        <div class="card-heading-wrapper eligibility-mobile-card">
           <img src="images/sec6.jpeg" alt="icon" class="card-icon" />
         <h5 class="card-heading">Cloud Platforms</h5>
         <span class="arrow-icon-mobile">&#9660;</span>
@@ -402,7 +402,7 @@
       </div>
 
       <div class="col-md-3">
-        <div class="card-heading-wrapper">
+        <div class="card-heading-wrapper eligibility-mobile-card">
           <img src="images/sec5.jpeg" alt="icon" class="card-icon" />
         <h5 class="card-heading">DevOps and CI/CD</h5>
         <span class="arrow-icon-mobile">&#9660;</span>
@@ -421,7 +421,7 @@
       </div>
 
       <div class="col-md-3">
-        <div class="card-heading-wrapper">
+        <div class="card-heading-wrapper eligibility-mobile-card">
           <img src="images/sec8.jpeg" alt="icon" class="card-icon" />
         <h5 class="card-heading">Testing & Quality Assurance</h5>
         <span class="arrow-icon-mobile">&#9660;</span>
@@ -439,7 +439,7 @@
       </div>
 
       <div class="col-md-3">
-        <div class="card-heading-wrapper">
+        <div class="card-heading-wrapper eligibility-mobile-card">
           <img src="images/sec7.jpeg" alt="icon" class="card-icon" />
         <h5 class="card-heading">APIs & Integration</h5>
         <span class="arrow-icon-mobile">&#9660;</span>
@@ -1263,17 +1263,18 @@ is a win-win for all.</p>
 
 
     <!-- Images Row -->
-    <div class="row text-center justify-content-center">
-      <div class="col-md-4">
+    <div class="row flex-nowrap overflow-auto mobile-slider image-slider" id="imageSlider">
+      <div class="col-10 col-md-4 me-3">
         <img src="images/im2.png" alt="Image 1" class="who-img">
       </div>
-      <div class="col-md-4">
+      <div class="col-10 col-md-4 me-3">
         <img src="images/im3.png" alt="Image 2" class="who-img">
       </div>
-      <div class="col-md-4">
+      <div class="col-10 col-md-4 me-3">
         <img src="images/im1.png" alt="Image 3" class="who-img">
       </div>
     </div>
+
 
     <div class="col-12 text-center mb-5">      
       
@@ -1338,36 +1339,36 @@ is a win-win for all.</p>
     </div>
 
     <!-- Cards Grid -->
-    <div class="row text-center">
-      
-      <div class="col-md-3">
+    <div class="row flex-nowrap overflow-auto mobile-slider news-slider" id="newsSlider" onscroll="updateNewsDots()">
+      <div class="col-10 col-md-3 me-3">
         <div class="eligibility-card-2">
           <img src="images/news1.png" class="news-image" alt="News Image">
         </div>
       </div>
-
-      <div class="col-md-3">
+      <div class="col-10 col-md-3 me-3">
         <div class="eligibility-card-2">
           <img src="images/news3.png" class="news-image" alt="News Image">
         </div>
       </div>
-
-      <div class="col-md-3">
-        <div class="eligibility-card-2 ">
+      <div class="col-10 col-md-3 me-3">
+        <div class="eligibility-card-2">
           <img src="images/news2.png" class="news-image" alt="News Image">
         </div>
       </div>
-
-      <div class="col-md-3">
+      <div class="col-10 col-md-3 me-3">
         <div class="eligibility-card-2">
           <img src="images/news4.png" class="news-image" alt="News Image">
         </div>
       </div>
-
-      
     </div>
 
-</div>
+    <div class="slider-dots text-center mt-3 mb-3" id="newsSliderDots">
+      <span class="dot active" onclick="scrollNewsToSlide(0)"></span>
+      <span class="dot" onclick="scrollNewsToSlide(1)"></span>
+      <span class="dot" onclick="scrollNewsToSlide(2)"></span>
+      <span class="dot" onclick="scrollNewsToSlide(3)"></span>
+    </div>
+
 
 <style>
 
@@ -1436,7 +1437,7 @@ is a win-win for all.</p>
     <div class="text-center">
       
       <!-- Apply Now Button -->
-      <button class="contlast connect-button" data-bs-toggle="modal" data-bs-target="#detailsModal" style=" POSITION: relative;">
+      <button class="contlast connect-button" id="news-button" data-bs-toggle="modal" data-bs-target="#detailsModal" style="transform: translate(0%, -50%); POSITION: relative;">
         Apply Now
       </button>
 
@@ -1487,9 +1488,17 @@ is a win-win for all.</p>
     margin: 0 1.5rem;
     transition: transform 0.3s ease;
 }
-
+#news-button{
+  transform: translate(0%, -85%);
+}
 .social-icon:hover img {
   transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+  #news-button{
+  transform: translate(0%, -60%);
+}
 }
 
 
@@ -2057,12 +2066,13 @@ The operator and other persons who have access to personal data are obliged not 
 </script>
 <script>
   $(document).ready(function () {
-    $('.arrow-icon-mobile').click(function () {
-      const $icon = $(this);
-      const $card = $icon.closest('.col-md-3').find('.eligibility-card-mobile');
+    $('.eligibility-mobile-card').click(function () {
+      const $card = $(this).closest('.col-md-3');                        // Find the parent card
+      const $content = $card.find('.eligibility-card-mobile');          // Target card content
+      const $arrow = $(this).find('.arrow-icon-mobile');    // Target arrow
 
-      $card.slideToggle();                     // Show/hide the card
-      $icon.toggleClass('rotated`');            // Rotate arrow
+      $content.slideToggle();             // Toggle content visibility
+      $arrow.toggleClass('rotated');
     });
     $('.certificate-card').click(function () {
       const $card = $(this).closest('.col-md-3');                        // Find the parent card
@@ -2096,6 +2106,34 @@ The operator and other persons who have access to personal data are obliged not 
     });
   }
 
+</script>
+
+<script>
+  const newsSlider = document.getElementById('newsSlider');
+const newsDots = document.getElementById('newsSliderDots').children;
+
+function scrollNewsToSlide(index) {
+  const slideWidth = newsSlider.children[0].offsetWidth + 16; // width + gap (adjust gap if needed)
+  newsSlider.scrollTo({
+    left: index * slideWidth,
+    behavior: 'smooth'
+  });
+  setActiveNewsDot(index);
+}
+
+function setActiveNewsDot(index) {
+  for (let dot of newsDots) dot.classList.remove('active');
+  if (newsDots[index]) newsDots[index].classList.add('active');
+}
+
+function updateNewsDots() {
+  const scrollLeft = newsSlider.scrollLeft;
+  const slideWidth = newsSlider.children[0].offsetWidth + 16; // width + gap
+  const index = Math.round(scrollLeft / slideWidth);
+  setActiveNewsDot(index);
+}
+
+newsSlider.addEventListener('scroll', updateNewsDots);
 </script>
 
     
