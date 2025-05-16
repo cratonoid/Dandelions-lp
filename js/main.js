@@ -190,14 +190,14 @@ $("#submitForm").click(function (event) {
 
     // Get input values
     let fullName = $("#fullName").val().trim();
-    let whatsappNumber = document.querySelector("#whatsappNumber").value.trim();
+    // let input = document.querySelector("#whatsappNumber");
+    let whatsappNumber = iti ? iti.getNumber() : input.value.trim();
     let fileInput = document.getElementById("uploadCV");
     let file = fileInput.files[0];
 
     // Validation
     let nameRegex = /^[a-zA-Z\s]+$/; 
-    let phoneRegex = /^\d{10}$/;
-
+    let phoneRegex = /^\+\d{1,3}\s?\d{6,14}$/;
 
     if (fullName === "" || !nameRegex.test(fullName)) {
         swal("Invalid Name", "Please enter a valid full name (letters only).", "error");
@@ -205,7 +205,7 @@ $("#submitForm").click(function (event) {
     }
 
     if (whatsappNumber === "" || !phoneRegex.test(whatsappNumber)) {
-        swal("Invalid Number", "Please enter a valid phone number.", "error");
+        swal("Invalid Number", "Please enter a valid international phone number.", "error");
         return;
     }
 

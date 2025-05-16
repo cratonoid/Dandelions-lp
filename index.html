@@ -1527,29 +1527,24 @@ The operator and other persons who have access to personal data are obliged not 
   <script src="js/main.js"></script>
 
   <script>
-//    let iti; // Declare globally
-//
-//    document.addEventListener("DOMContentLoaded", function () {
-//    let input = document.querySelector("#whatsappNumber");
-//
-//    if (input) {
-//        iti = window.intlTelInput(input, {
-//            initialCountry: "ae",
-//            separateDialCode: true,
-//            preferredCountries: ["us", "in", "gb", "ae"],
-//            utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
-//            dropdownContainer: document.body // Moves dropdown outside modal
-//        });
-//    }
-//});
+   let iti; // Declare globally
+
+   document.addEventListener("DOMContentLoaded", function () {
+   let input = document.querySelector("#whatsappNumber");
+
+   if (input) {
+       iti = window.intlTelInput(input, {
+           initialCountry: "in",
+           separateDialCode: true,
+           preferredCountries: ["us", "in", "gb", "ae"],
+           utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+           dropdownContainer: document.body // Moves dropdown outside modal
+       });
+   }
+});
 
 
-    // var input = document.querySelector("#whatsappNumber");
-    // window.intlTelInput(input, {
-    //     initialCountry: "ae", // Set default country (optional)
-    //     separateDialCode: true, // Shows country code separately
-    //     preferredCountries: ["us", "in", "gb", "ae"], // Optional priority list
-    // });
+   
 </script>
 
 
