@@ -400,10 +400,20 @@ h2.d-flex.align-items-center {
     align-items: center;
     justify-content: center;
 }
+.recruiters-mobile{
+    display: none;
+   }
 
 @media (max-width: 768px) { 
-   
-
+   .recruiters-desktop{
+    display: none;
+   }
+   .recruiters-mobile{
+    display: block;
+    text-align: center;
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+   }
     .container {
         padding-left: 15px;
         padding-right: 15px;
@@ -425,7 +435,7 @@ h2.d-flex.align-items-center {
 </style>
 
 <!-- Recruitment Process -->
-  <div class="container" style="margin-top: 4rem;">
+  <div class="container recruiters-desktop" style="margin-top: 4rem;">
 
     <div class="col-12 text-center mt-5">
       <div class="block-heading-1">
@@ -435,6 +445,12 @@ h2.d-flex.align-items-center {
       <img src="images/rec_process.png" alt="Certifications" class="img-fluid my-4" style="max-width: 100%;">
     </div>
     <img src="images/rect.png" alt="">
+
+  </div>
+   <div class="container recruiters-mobile" style="margin-top: 4rem;">
+    <div class="col-12 text-center mt-5">
+      <img src="images/recruitment_image.png" alt="Certifications" class="img-fluid my-4" style="max-width: 100%;">
+    </div>
 
   </div>
 
@@ -755,7 +771,7 @@ is a win-win for all.</p>
 
 
 <!-- Why apply section -->
-<div class="section-with-images py-5">
+<div class="section-with-images py-5 image-desktop">
   <div class="container">
     <!-- Heading -->
     <div class="col-12 text-center mb-4">
@@ -783,12 +799,42 @@ is a win-win for all.</p>
   </div>
 </div>
 
+<div class="section-with-images py-5 image-mobile">
+  <div class="container">
+    <!-- Heading -->
+    <div class="col-12 text-center mb-4">
+      <p class= main-heading style="color: #000; font-weight: 900; font-size: 40px !important;">Why Apply for Dubai’s IT Sector?</p>
+    </div>
+
+    <!-- Image Grid -->
+    <div class="row align-items-stretch">
+      <!-- Right Column Stacked Images -->
+      <div class="col-md-12 d-flex flex-column justify-content-between">
+        <img src="images/gp7.png" alt="Image 1" class="img-fluid stacked-img rounded mb-3">
+        <img src="images/gp8.png" alt="Image 1" class="img-fluid stacked-img rounded mb-3">
+        <img src="images/gp9.png" alt="Image 1" class="img-fluid stacked-img rounded mb-3">
+        <img src="images/gp10.png" alt="Image 1" class="img-fluid stacked-img rounded mb-3">
+        <img src="images/gp11.png" alt="Image 1" class="img-fluid stacked-img rounded mb-3">
+        <img src="images/gp12.png" alt="Image 1" class="img-fluid stacked-img rounded mb-3">
+        
+      </div>
+      <!-- Left Person Image -->
+      <div class="col-md-12 mb-md-0">
+        <img src="images/person1.png" alt="Person" class="img-fluid full-height-img rounded">
+      </div>
+
+    </div>
+  </div>
+</div>
+
 <!-- Styles -->
 <style>
 .section-with-images {
   background-color: #f2f9ff; /* light background */
 }
-
+.image-mobile{
+  display: none;
+}
 .full-height-img {
   height: 100%;
   width: 100%;
@@ -800,6 +846,15 @@ is a win-win for all.</p>
   height: 30%;
   object-fit: contain;
   width: 100%;
+}
+
+@media (max-width: 768px) {
+  .image-desktop{
+    display: none;
+  }
+    .image-mobile{
+    display: block;
+  }
 }
 </style>
 
@@ -1073,7 +1128,34 @@ is a win-win for all.</p>
 }
 
 
+@media (max-width: 512px) {
+    .social-icon img {
+      width: 4rem; /* smaller size for small screens */
+    }
+  }
 
+@media (max-width: 447px) {
+    .social-icon img {
+      width: 3.8rem; /* smaller size for small screens */
+    }
+  }
+
+@media (max-width: 436px) {
+    .social-icon img {
+      width: 3.5rem; /* smaller size for small screens */
+    }
+  }
+@media (max-width: 411px) {
+    .social-icon img {
+      width: 3rem; /* smaller size for small screens */
+      margin: 0 0.8rem;
+    }
+  }
+@media (max-width: 375px) {
+    .social-icon img {
+      width: 2.5rem; /* smaller size for small screens */
+    }
+  }
 
   /* Desktop View */
   .cont {
