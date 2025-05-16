@@ -558,8 +558,8 @@
     </div>
 
     <!-- Apply Now Button -->
-    <div class="text-center button-join">
-      <button class="connet connect-button btn-gradient" data-bs-toggle="modal" data-bs-target="#detailsModal" >
+    <div class="connet text-center button-join">
+      <button class="connect-button btn-gradient" data-bs-toggle="modal" data-bs-target="#detailsModal" >
         Apply Now
       </button>
       <p>
@@ -953,14 +953,14 @@ h2.d-flex.align-items-center {
 
 <!-- WHY CHOOSE US Section -->
 <div class="site-section py-5" style="margin-top: 4rem; background-image: url('images/sec_backg.png'); background-size: cover; background-position: center;" id="wedo-section">
-  <div class="container">
+  <div class="contu container">
 
     <div class="connt2 text-center" style= "position: relative;"
     >
     <button class="connect-button" data-bs-toggle="modal" data-bs-target="#detailsModal"  >
       Showcase Hidden Skills
     </button>
-    <p>Connect with network of recruiters looking for above skills</p>
+    <p>Complete our game based personality analysis.</p>
               </div>
     
     <!-- Heading -->
@@ -1219,19 +1219,31 @@ is a win-win for all.</p>
 }
 .connt3{transform: translate(0%, 120%); }
 @media (max-width: 768px) {
+  .who-img{
+        width: 100%;
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px  !important;
+    border-bottom-right-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    object-fit: cover;
+    height: 100% !important;
+  }
+  .contu{
+    padding-bottom: 0rem !important;
+  }
   .whyyy{
     margin-bottom: 0rem !important;
     padding-top: 0rem !important;
 
   }
   .connt3{
-    transform: translate(0%, 80%) !important; 
+    transform: translate(0%, 68%) !important; 
   }
   .connet{
     position: absolute;
-        right: 25%;
-        top: 70%;
-        margin-top: 5%;
+        
   }
   .img-stack{
     padding-left: 5%;
