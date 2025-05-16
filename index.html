@@ -844,7 +844,7 @@ h2.d-flex.align-items-center {
         </div>
       </div>      
     </div>
-    <div class="slider-dots text-center mt-3" id="sliderDots">
+    <div class="slider-dots text-center mt-3 mb-3" id="sliderDots">
   <span class="dot active" onclick="scrollToSlide(0)"></span>
   <span class="dot" onclick="scrollToSlide(1)"></span>
   <span class="dot" onclick="scrollToSlide(2)"></span>
@@ -852,12 +852,7 @@ h2.d-flex.align-items-center {
 </div>
     
 </div>
-<div class="slider-dots text-center mt-3" id="sliderDots">
-  <span class="dot active" onclick="scrollToSlide(0)"></span>
-  <span class="dot" onclick="scrollToSlide(1)"></span>
-  <span class="dot" onclick="scrollToSlide(2)"></span>
-  <span class="dot" onclick="scrollToSlide(3)"></span>
-</div>
+
 
 
 <style>
@@ -908,18 +903,25 @@ h2.d-flex.align-items-center {
     margin-bottom: 20px;
   }
     .mobile-slider {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    gap: 1rem;
-    padding-left: 1rem;
-  }
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  gap: 1rem;
+  padding-left: 1rem;
+  scrollbar-width: none;       /* Firefox */
+  -ms-overflow-style: none;    /* IE 10+ */
+}
 
-  .mobile-slider > div {
-    flex: 0 0 auto;
-    scroll-snap-align: start;
-  }
+.mobile-slider::-webkit-scrollbar {
+  display: none;               /* Chrome/Safari */
+}
+
+.mobile-slider > div {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  width: 80%;                   /* mobile width */
+}
 
   }
 </style>
