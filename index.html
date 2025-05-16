@@ -55,7 +55,7 @@
     <img src="images/sub_ban_mob.png" alt="Logo" class="d-block d-md-none logo-img" style="max-width: 100%; height: auto;">
 
     <!-- Button on top of logo -->
-    <a href="#" class="cbtn connect-button up-button btn-gradient apply-btn"
+    <a href="#" class="cbtn connect-button btn-gradient apply-btn"
        data-bs-toggle="modal" data-bs-target="#detailsModal">
       Apply Now
     </a>
@@ -73,6 +73,10 @@
     </div>
     
     <style>
+      
+      .d-block{
+        padding-top: 5rem;
+      }
       /* Position the button on top of the logo */
 .apply-btn {
       position: absolute;
@@ -83,9 +87,19 @@
 
 /* Optional: Shrink the button a bit on mobile */
 @media (max-width: 768px) {
+  .logo-position{
+    margin-top: 0px !important;
+  }
+  .roww{
+    align-items: center !important;
+    justify-content: center !important;
+  }
   .apply-btn {
-    font-size: 18px;
-    padding: 10px 20px;
+    font-size: 18px !important;
+    padding: 8px 18px !important;
+    z-index: 10;
+    top: 67% !important;
+    left: 34% !important;
   }
 }
 
